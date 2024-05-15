@@ -2,6 +2,7 @@
 <p align="center">
   <img src="https://www.intel.com/content/dam/www/central-libraries/us/en/images/d455.png.rendition.intel.web.576.324.png" width="350" title="Intel RealSense">
 </p>
+
 * To download ***RealSense*** package: 
   * Git the branch
     ```sh
