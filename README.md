@@ -48,6 +48,19 @@ Then:
     ```sh
     sudo apt install ros-$ROS_DISTRO-librealsense2 ros-$ROS_DISTRO-librealsense2-dbgsym ros-$ROS_DISTRO-realsense2-camera ros-$ROS_DISTRO-realsense2-camera-dbgsym ros-$ROS_DISTRO-realsense2-camera-msgs ros-$ROS_DISTRO-realsense2-camera-msgs-dbgsym ros-$ROS_DISTRO-realsense2-description
     ```
+* To download ***GigE*** package: 
+  * Git the branch:
+    ```sh
+    git checkout origin/GigE -- .
+    ```
+
+  * Install the resources:
+    ```sh
+    mkdir -p ~/aida_software/MVSDK
+    tar -xf linuxSDK_V2.1.0.41.tar.gz -C ~/aida_software/MVSDK/
+    cd ~/aida_software/MVSDK/
+    <Follow the instructions in <LinuxSDK Document.pdf>>
+    ```
     
 
 ## COPY and MERGE the `launch` and `config` 
