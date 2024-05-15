@@ -1,0 +1,115 @@
+# ####### Realsense Template
+# serial: []
+# visual_preset: ["RS2_RS400_VISUAL_PRESET_MAX_RANGE"] # Leave empty to pick the default.
+# depth_fps: [100 | 15 | 30 | 300 | 6 | 60 | 90]
+# depth_resolution: [1280,720 | 256,144 | 424,240 | 480,270 | 640,360 | 640,480 | 848,100 | 848,480]
+# depth_format: [RS2_FORMAT_Z16]
+# color_fps: [15 | 30 | 6 | 60]
+# color_resolution: [1280,720 | 1920,1080 | 320,180 | 320,240 | 424,240 | 640,360 | 640,480 | 848,480 | 960,540]
+# color_format: [RS2_FORMAT_BGR8 | RS2_FORMAT_BGRA8 | RS2_FORMAT_RAW16 | RS2_FORMAT_RGB8 | RS2_FORMAT_RGBA8 | RS2_FORMAT_Y16 | RS2_FORMAT_Y8 | RS2_FORMAT_YUYV]
+# point_cloud_format: XYZ | XYZRGB 
+
+
+camera_name: Camera_1
+serial: !!str "044322072287"
+enable_rgbd: true
+enable_sync: true
+
+position: "0,0,0"
+orientation: "0,0,0"
+
+# Depth
+enable_depth: true
+colorizer.enable: false # it colorizes the depth map
+
+depth_module.depth_profile: 1280x720x30
+depth_module.infra_profile: 1280x720x30
+depth_module.frames_queue_size: 10
+
+# Depth to Color Alignment
+align_depth.enable: true
+align_depth.frames_queue_size: 10
+
+depth_module.enable_auto_exposure: true
+
+depth_module.emitter_always_on: true
+depth_module.emitter_enabled: 1 # from: 0, to: 2
+depth_module.emitter_on_off: false
+
+depth_module.error_polling_enabled: true
+depth_module.exposure: 8500  # from: 1, to: 165000
+depth_module.gain: 16  # from: 16, to: 248
+depth_module.global_time_enabled: true
+depth_module.hdr_enabled: false
+depth_module.inter_cam_sync_mode: 0
+depth_module.laser_power: 150.0
+depth_module.output_trigger_enabled: false
+depth_module.exposure.1: 7500
+depth_module.gain.1: 16
+depth_module.exposure.2: 1
+depth_module.gain.2: 16
+
+decimation_filter.enable: true
+decimation_filter.filter_magnitude: 2 # from: 1, to: 8
+decimation_filter.frames_queue_size: 10
+
+clip_distance: -2.0
+
+# spatial_filter.enable: true
+# spatial_filter.filter_magnitude: 2 # from: 1, to: 5
+# spatial_filter.filter_smooth_alpha: 0.5 # from: 0.25, to: 1
+# spatial_filter.filter_smooth_delta: 20 # from: 1, to: 50
+# spatial_filter.frames_queue_size: 10
+
+# temporal_filter.enable: true
+# temporal_filter.filter_smooth_alpha: 0.4 # from: 0, to: 1
+# temporal_filter.filter_smooth_delta: 20 # from: 1, to: 100
+# temporal_filter.frames_queue_size: 10
+
+
+# PointCloud
+pointcloud.enable: true
+pointcloud.frames_queue_size: 10
+pointcloud.stream_filter: 2
+pointcloud.stream_index_filter: 0
+pointcloud.ordered_pc: false
+pointcloud.allow_no_texture_points: false
+
+# Color
+enable_color: true
+hdr_merge.enable: false
+hdr_merge.frames_queue_size: 10
+rgb_camera.color_profile: 1280x720x30
+rgb_camera.frames_queue_size: 10
+rgb_camera.enable_auto_exposure: true
+rgb_camera.auto_exposure_priority: false
+rgb_camera.backlight_compensation: false
+rgb_camera.brightness: 0 # from: -64, to: 64
+rgb_camera.contrast: 50 # from: 0, to: 100
+
+rgb_camera.enable_auto_white_balance: true
+rgb_camera.exposure: 166 # from: 1, to: 10000
+
+rgb_camera.gain: 64 # from: 0, to: 128
+rgb_camera.gamma: 300 # from: 100, to: 500
+rgb_camera.global_time_enabled: true
+rgb_camera.hue: 0 # from: -180, to: 180
+rgb_camera.saturation: 64 # from: 0, to: 100
+rgb_camera.sharpness: 50 # from: 0, to: 100
+rgb_camera.white_balance: 4800.0 # from: 2800, to: 6500
+
+# Motion
+enable_accel: true
+enable_gyro: true
+linear_accel_cov: 0.01
+angular_velocity_cov: 0.01
+motion_module.enable_motion_correction: true
+motion_module.frames_queue_size: 10
+motion_module.global_time_enabled: true
+
+# TF
+base_frame_id: robot
+publish_tf: true
+tf_publish_rate: 30.0
+
+accelerate_gpu_with_glsl: true
