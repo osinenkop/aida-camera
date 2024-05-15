@@ -1,4 +1,7 @@
 # GigE Global Shutter ROS2
+<p align="center">
+  <img src="https://nwzimg.wezhan.cn/contents/sitefiles2059/10298674/images/45192897.jpg" width="350" title="HuaTeng GigE Vision">
+</p>
 * To download ***GigE*** package: 
   * Git the branch:
     ```sh
