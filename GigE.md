@@ -1,4 +1,4 @@
-# GigE ROS2
+# GigE Global Shutter ROS2
 * To download ***GigE*** package: 
   * Git the branch:
     ```sh
