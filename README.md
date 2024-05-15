@@ -27,40 +27,11 @@ and to see the list of available cameras:
 git branch -a
 ```
 
-Then:
+It's time to download the packages:
+* [Jabra Package](Jabra.md)
+* [RealSense Package](RealSense.md)
+* [GigE Package](GigE.md)
 
-* To download ***Jabra*** package: 
-  * Git the branch:
-    ```sh
-    git checkout origin/Jabra -- .
-    ```
-
-* To download ***RealSense*** package: 
-  * Git the branch
-    ```sh
-    git checkout origin/RealSense -- .
-    ```
-  * Download the source codes:
-    ```zsh
-    git clone https://github.com/IntelRealSense/realsense-ros.git -b ros2-development
-    ```
-  * Install the resources:
-    ```sh
-    sudo apt install ros-$ROS_DISTRO-librealsense2 ros-$ROS_DISTRO-librealsense2-dbgsym ros-$ROS_DISTRO-realsense2-camera ros-$ROS_DISTRO-realsense2-camera-dbgsym ros-$ROS_DISTRO-realsense2-camera-msgs ros-$ROS_DISTRO-realsense2-camera-msgs-dbgsym ros-$ROS_DISTRO-realsense2-description
-    ```
-* To download ***GigE*** package: 
-  * Git the branch:
-    ```sh
-    git checkout origin/GigE -- .
-    ```
-
-  * Install the resources:
-    ```sh
-    mkdir -p ~/aida_software/MVSDK
-    tar -xf linuxSDK_V2.1.0.41.tar.gz -C ~/aida_software/MVSDK/
-    cd ~/aida_software/MVSDK/
-    ```
-  * Follow the instructions in `LinuxSDK Document.pdf`
     
 
 ## COPY and MERGE the `launch` and `config` 
