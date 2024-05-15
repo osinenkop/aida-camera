@@ -59,8 +59,8 @@ Then:
     mkdir -p ~/aida_software/MVSDK
     tar -xf linuxSDK_V2.1.0.41.tar.gz -C ~/aida_software/MVSDK/
     cd ~/aida_software/MVSDK/
-    <Follow the instructions in <LinuxSDK Document.pdf>>
     ```
+  * Follow the instructions in `LinuxSDK Document.pdf`
     
 
 ## COPY and MERGE the `launch` and `config` 
