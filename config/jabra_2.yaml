@@ -1,0 +1,20 @@
+index: !!str "2"
+serial: !!str "A0000A163E51-0"
+port_number: !!str ""
+resolution: !!str "1920,1080"
+fps: !!int 30
+is_calibrated: !!bool true
+camera_matrix: [983.69003,   0.     , 963.07744, 
+                0.     , 977.89903, 558.57986, 
+                0.     ,   0.     ,   1.     ]
+distortion_model: plumb_bob
+distortion_coefficients: [-0.017920, -0.057303, 0.005525, -0.005233, 0.000000]
+rectification_matrix: [1., 0., 0.,
+                       0., 1., 0.,
+                       0., 0., 1.]
+projection_matrix: [ 944.24103,    0.     , 1000.45295,    0.     ,
+                     0.     ,  976.57404,  557.823  ,    0.     ,
+                     0.     ,    0.     ,    1.     ,    0.     ]
+position: !!str "0.0,0.0,0.0"
+orientation: !!str "0.0,0.0,0.0"
+queue_size: !!int 10
