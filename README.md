@@ -50,7 +50,7 @@ install(
 
 ## Build
 ```sh
-cd ~/aida_ws && colcon build --symlink-install
+colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release
 echo source $PWD/install/setup.sh >> ~/.<your_shell>rc
 ```
 
