@@ -8,6 +8,8 @@
     ```sh
     git checkout origin/ZED -- .
     ```
+  * Install CUDA
+  * Install [ZED SDK](https://www.stereolabs.com/developers/release).
   * Download the source codes:
     ```zsh
     cd ~/aida_ws/aida_camera
