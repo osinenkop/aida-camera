@@ -10,7 +10,9 @@
     ```
   * Download the source codes:
     ```zsh
+    cd ~/aida_ws/aida_camera
     git clone https://github.com/IntelRealSense/realsense-ros.git -b ros2-development
+    rosdep install --from-paths ./ --ignore-src -r -y
     ```
   * Install the resources:
     ```sh
