@@ -31,7 +31,7 @@ It's time to download the packages:
 * [Jabra Package](Jabra.md)
 * [RealSense Package](RealSense.md)
 * [GigE Package](GigE.md)
-
+* [ZED Package](ZED.md)
     
 
 ## COPY and MERGE the `launch` and `config` 
