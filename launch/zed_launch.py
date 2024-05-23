@@ -182,7 +182,7 @@ def launch_setup(context, params, *args, **kwargs):
 
 
 def generate_launch_description():
-    #### Find Connected Jabra Cameras ####
+    #### Find Connected ZED Cameras ####
     
     import subprocess as sp
     connected_devices = []
