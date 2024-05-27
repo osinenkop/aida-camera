@@ -5,6 +5,12 @@
 
 
 * To download ***Microsoft Azure Kinect*** package: 
+  * Git the branch
+  ```sh
+  cd ~/aida_ws/aida_camera
+  git checkout origin/Azure_Kinect -- .
+  ```
+
   * Install the resources:
   
   ```sh
@@ -44,17 +50,14 @@
 
   To make sure everything is installed correctly, type `k4aviewer` and connect your camera. It should be able to detect its serial number.
 
-* Go back to `aida_ws`:
   ```sh
-  cd ~/aida_ws
+  cd ~/aida_ws/aida_camera
+  rosdep install --from-paths ./ --ignore-src -r -y
   ```
-  * Git the branch
-    ```sh
-    git checkout origin/Azure_Kinect -- .
-    ```
-  * Download the source codes:
+
+  <!-- * Download the source codes:
     ```zsh
-    cd ~/aida_ws/aida_camera
+    
     git clone https://github.com/microsoft/Azure_Kinect_ROS_Driver.git -b humble
     rosdep install --from-paths ./ --ignore-src -r -y
-    ```
+    ``` -->
