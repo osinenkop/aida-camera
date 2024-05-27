@@ -44,6 +44,10 @@
 
   To make sure everything is installed correctly, type `k4aviewer` and connect your camera. It should be able to detect its serial number.
 
+* Go back to `aida_ws`:
+  ```sh
+  cd ~/aida_ws
+  ```
   * Git the branch
     ```sh
     git checkout origin/Azure_Kinect -- .
