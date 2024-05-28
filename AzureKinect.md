@@ -83,7 +83,7 @@ export DISPLAY=:<1 or 0>
 ```
 
 
-**NOTE 2**
+<!-- **NOTE 2**
 
 Посмотреть размер буфера:
 ```sh
@@ -96,4 +96,4 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 дописать usbcore.usbfs_memory_mb=1000
 ```
 
-Now reattach the camera!
+Now reattach the camera! -->
