@@ -32,6 +32,7 @@ It's time to download the packages:
 * [RealSense Package](RealSense.md)
 * [GigE Package](GigE.md)
 * [ZED Package](ZED.md)
+* [MS Azure Kinect](AzureKinect.md)
     
 
 ## COPY and MERGE the `launch` and `config` 
