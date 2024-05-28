@@ -1,7 +1,8 @@
 # Microsoft Azure Kinect ROS2
 
-
-
+<p align="center">
+  <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/7824-ImmHero:VP4-1399x600" width="350" title="StereoLabs ZED">
+</p>
 
 
 * To download ***Microsoft Azure Kinect*** package: 
